@@ -16,7 +16,7 @@ def hablar_en_hilo(texto):
 
 # 2. Carga del Modelo
 script_dir = os.path.dirname(os.path.abspath(__file__))
-modelo_path = os.path.join(script_dir, "runs", "detect", "mi_yolo_euro-5", "weights", "best.pt")
+modelo_path = os.path.join(script_dir, "models", "best.pt")
 model = YOLO(modelo_path)
 
 # DICCIONARIO DE FRASES DE VOZ (Usamos claves en minúsculas y limpias)
@@ -62,7 +62,7 @@ while True:
 
         if valor_billete in NOMBRES_LECTURA:
             billetes_en_frame.append(valor_billete)
-            
+
     # -------------------------------------------------------------
     # LÓGICA DE ESTABILIDAD
     # -------------------------------------------------------------

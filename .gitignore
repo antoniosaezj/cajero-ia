@@ -1,5 +1,15 @@
-dataset/
-dataset_local/
 venv/
 credentials.json
 .env
+
+# Ignorar resultados de entrenamiento y pesos intermedios
+runs/
+capturas_raw/
+dataset/
+dataset_local/
+
+# Ignorar archivos pesados o del sistema
+*.pt
+!models/best.pt
+__pycache__/
+.vscode/
